@@ -1,4 +1,4 @@
-/* CÓDIGOS QUE TERÃO AS MESMAS CONFIGURAÇÕES FICARAM AQUI, EX: BOTÃO */
+/* CÓDIGOS QUE TERÃO AS MESMAS CONFIGURAÇÕES FICARAM AQUI, EX: BOTÃO */ 
 
 * {
     margin: 0;
@@ -8,8 +8,43 @@
 
 /* VÁRIAVEIS PARA CORES */
 :root {
-    --primary-color: #CFD5DE;
+    --primary-color: #eeeeee;
     --secondary-color: #76BED0; 
     --green-color: #3D6A25;
     --brown-color: #5E3023;
+    --text: #000000;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.nav-bar {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    background-color: rgb(211, 211, 211);
+}
+
+.nav-bar .nav-menu-lista {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-bar .nav-menu-lista .nav-links {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-bar .nav-btn {
+    display: none;
 }

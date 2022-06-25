@@ -1,1 +1,15 @@
 /* CÓDIGOS QUE TERÃO AS MESMAS CONFIGURAÇÕES FICARAM AQUI, EX: BOTÃO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VÁRIAVEIS PARA CORES */
+:root {
+    --primary-color: #CFD5DE;
+    --secondary-color: #76BED0; 
+    --green-color: #3D6A25;
+    --brown-color: #5E3023;
+}

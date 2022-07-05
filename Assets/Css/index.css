@@ -1,0 +1,76 @@
+/* ============================= TOPO DO SITE LOGO ===============================*/
+
+.logo-container-items {
+    height: 8vh;
+    padding-inline: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo-container-items .logo-btn {
+    background-color: white;
+    border: none;
+}
+
+.logo-container-items .logo-btn i {
+    font-size: 3rem;
+}
+
+.logo-container-items .logo-container {
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.logo-container-items .logo-container a{
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVEGACAO */
+.navigation {
+    display: none;
+}
+
+.navigation.navOn {
+    height: calc(100vh - 8vh);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(195, 195, 255);
+
+    position: sticky;
+    left: 0;
+    top: 8vh;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.navigation ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* GRID ON   */
+
+.container-grid.row-grid {
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+/* ================== PARAMOS NA IMAGEM =============== */

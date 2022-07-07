@@ -81,7 +81,7 @@
 /* ================== PARAMOS NA IMAGEM =============== */
 
 .figure-container {
-    background-color: rgb(134, 146, 123);
+    background-color: rgb(66, 66, 55);
     max-width: 100%;
     height: 50vh;
 }
@@ -100,8 +100,8 @@
 }
 
 .figure-container h1 {
-    font-size: 5rem;
-    color: white;
+    font-size: 10rem;
+    color: #ffffff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -114,4 +114,33 @@
 
 .background-section {
     background-color: #3a3d38;
+}
+
+main {
+    margin-top: 8rem;
+}
+
+main header {
+    margin-bottom: 12rem;
+    border-bottom: 2px solid black;
+}
+
+main header h2 {
+    font-size: 5rem;
+    color: #3a3d38;
+    text-transform: uppercase;
+}
+
+/* CONTAINER SOBRE */
+
+.figure-sobre {
+    max-width: 400px;
+    height: 300px;
+    width: 100%;
+}
+
+.figure-sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

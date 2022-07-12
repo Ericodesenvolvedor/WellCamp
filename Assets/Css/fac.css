@@ -1,11 +1,11 @@
 body{
     background: #eee;
-    padding-top: 20px;
+    padding-top: 2rem;
     font-family: monospace;
   }
   .header{
-    border-radius: 20px 20px 0px 0px;
-    padding: 10px 0px;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem 0;
     background: rgb(0, 128, 0);
     color: #fff;
     width: 100%;
@@ -14,19 +14,24 @@ body{
     justify-content: center;
   }
   .faq-item{
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
   }
   .faq-body{
     display: none;
-    margin-top: 30px;
+    margin-top: 3rem;
   }
+
+  .faq-body.active-response {
+    display: block;
+  }
+
   .faq-wrapper{
     width: 75%;
     margin: 0 auto;
   }
   .faq-inner{
-    padding: 30px;
+    padding: 3rem;
     background: aliceblue;
   }
   .faq-plus{
@@ -35,6 +40,7 @@ body{
     line-height: 1em;
     cursor: pointer;
   }
+
   hr{
     background-color: #9b9b9b;
 }

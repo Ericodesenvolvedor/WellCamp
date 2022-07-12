@@ -74,7 +74,7 @@ body {
     width: 37rem;
     height: 100vh;
     background-color: var(--primary-color);
-
+    box-shadow: -.3rem 0 1rem rgba(0, 0, 0, 0.336);
     position: fixed;
     top: 0;
     right: -40rem;

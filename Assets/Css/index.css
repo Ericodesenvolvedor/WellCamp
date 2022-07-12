@@ -213,3 +213,71 @@ body {
 .menu-link:hover {
     background-color: rgb(85, 134, 85);
 }
+
+/* ============= SOBRE =========== */
+
+main {
+    margin-block: 4rem;
+}
+
+#sobre-home .wrapper-content {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.wrapper-content header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: var(--font-primary);
+    margin-bottom: 4rem;
+}
+
+.wrapper-content header h2::before {
+    content: "";
+    width: 4px;
+    height: 4rem;
+    background-color: #8f7d64;
+    position: relative;
+    top: .5rem;
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+#sobre-home .flex-content {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.flex-content figure {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-content figure img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-content div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-content div h3 {
+    font-size: 3rem;
+    padding: .5rem;
+    border-bottom: .1rem solid black;
+}

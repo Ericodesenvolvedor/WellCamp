@@ -34,12 +34,161 @@
 #seta-acampamento-baner figure {
     width: 100%;
     text-align: center;
-    height: 20vh;
-   
+    height: 20%;
+    position: relative;
+    padding: 2vh;
+
+    animation-name: seta-acampamento;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #seta-img {
     width: 15vw;
-    height: 20vh;
+    height: 10vh;
     opacity: .8;
+    object-fit: contain;
+}
+
+@keyframes seta-acampamento {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 20px;
+    }
+
+}
+
+/* LogoMarca da empresa titulo */
+.logoMarca-main-titulo {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10vh;
+
+}
+
+#well-style {
+    color: #475d3b;
+    font-size: 8vh;
+    font-weight: 900;
+    object-fit: contain;
+}
+
+#camp-style {
+    color: #b4750f;
+    font-size: 8vh;
+    font-weight: 900;
+}
+
+
+
+/* Slide/carrosel */
+/* Refazer o carrosel  */
+
+.titulo-slide-main {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: #434343;
+}
+
+
+
+.slide-show-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    transition: background 0.4s;
+    margin-bottom: 40vh;
+}
+
+input [type=radio] {
+    display: none;
+}
+
+.img-slider {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.container-slide-main {
+    width: 100%;
+    height: 100%;
+    max-width: 50vw;
+    max-height: 50vh;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+
+}
+
+#img-1:checked~.cards #song-3,
+#img-2:checked~.cards #song-1,
+#img-3:checked~.cards #song-2 {
+    transform: translate(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#img-1:checked~.cards #song-2,
+#img-2:checked~.cards #song-3,
+#img-3:checked~.cards #song-1 {
+    transform: translate(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#img-1:checked~.cards #song-1,
+#img-2:checked~.cards #song-2,
+#img-3:checked~.cards #song-3 {
+    transform: translate(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+
+/* Sessão Bloco de cards */
+
+.sessao-cardsPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    max-height:100vh;
+}
+
+
+
+.titulo-blocoCards-main {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    color: #434343;
 }

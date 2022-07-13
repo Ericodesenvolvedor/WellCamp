@@ -9,6 +9,7 @@
     <title>Wellcamp</title>
     <link rel="stylesheet" href="./assets/Css/index.css">
     <link rel="stylesheet" href="./Assets/Css/padronizado.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -65,7 +66,7 @@
                         <h2>Sobre nós</h2>
                     </header>
 
-                    <div class="flex-content">
+                    <div class="flex-content" data-aos="fade-right">
                         <figure>
                             <img src="./Assets/Imagens/faculdade-imagem.jpg" alt="Na imagem contém uma visão da faculdade da parte da frente. Em sua volta a gramado verde, e algumas arvores">
                         </figure>
@@ -75,7 +76,7 @@
                         </div>
                     </div>
 
-                    <div class="flex-content">
+                    <div class="flex-content" data-aos="fade-left">
                         <figure>
                             <img src="./Assets/Imagens/grupo-de-pessoas-discutindo-algo.jpg" alt="Na imagem contém uma visão da faculdade da parte da frente. Em sua volta a gramado verde, e algumas arvores">
                         </figure>
@@ -85,7 +86,7 @@
                         </div>
                     </div>
 
-                    <div class="flex-content">
+                    <div class="flex-content" data-aos="fade-right">
                         <figure>
                             <img src="./Assets/Imagens/grupo-de-pessoas-sentados-na-areia-conversando.jpg" alt="grupo de pessoas sentados na areia conversando e se divertindo.">
                         </figure>
@@ -100,5 +101,11 @@
     </div>
 
     <script src="./assets/Javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>

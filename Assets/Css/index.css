@@ -37,11 +37,7 @@
 
     cursor: pointer;
 }
-
-/* .show-menu .hamburguer {
-    right: 31rem;
-} */
-
+ 
 .hamburguer .line {
     width: 100%;
     height: .2rem;
@@ -167,8 +163,6 @@ body {
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
-<<<<<<< HEAD
-=======
 }
 
 .sidebar {
@@ -258,6 +252,8 @@ main {
     /* background-color: rgb(197, 182, 159); */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.336);
     padding: 1rem;
+    position: relative;
+    z-index: -1;
 }
 
 #sobre-home .flex-content:nth-child(odd) {
@@ -293,5 +289,4 @@ main {
     text-align: center;
     font-size: 3rem;
     padding: .5rem;
->>>>>>> home-sobre
 }

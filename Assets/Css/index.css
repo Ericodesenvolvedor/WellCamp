@@ -249,10 +249,17 @@ main {
 #sobre-home .flex-content {
     width: 100%;
     height: 50vh;
-    margin-bottom: 3rem;
+    margin-block: 3rem;
     display: flex;
     align-items: center;
     gap: 3rem;
+    /* background-color: rgb(197, 182, 159); */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.336);
+    padding: 1rem;
+}
+
+#sobre-home .flex-content:nth-child(odd) {
+    flex-direction: row-reverse;
 }
 
 .flex-content figure {
@@ -273,11 +280,15 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
 }
 
 .flex-content div h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #41382c;
+    text-align: center;
     font-size: 3rem;
     padding: .5rem;
-    border-bottom: .1rem solid black;
 }

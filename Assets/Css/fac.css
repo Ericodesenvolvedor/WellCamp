@@ -1,7 +1,7 @@
 body{
     background: #eee;
     padding-top: 2rem;
-    font-family: monospace;
+    font-family: 'Mulish';
   }
   .header{
     border-radius: 2rem 2rem 0 0;
@@ -16,6 +16,9 @@ body{
   .faq-item{
     margin-bottom: 4rem;
     margin-top: 4rem;
+    padding: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.877);
+    border-radius: 1rem
   }
   .faq-body{
     display: none;
@@ -29,6 +32,8 @@ body{
   .faq-wrapper{
     width: 75%;
     margin: 0 auto;
+    box-shadow: 0 0 1rem rgb(19, 151, 74);
+    border-radius: 2rem
   }
   .faq-inner{
     padding: 3rem;
@@ -39,6 +44,7 @@ body{
     font-size: 1.4em;
     line-height: 1em;
     cursor: pointer;
+    
   }
 
   hr{

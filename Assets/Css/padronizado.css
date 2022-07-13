@@ -16,8 +16,13 @@ body {
 }
 
 :root {
+    /* Cores primarias do site */
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(0, 0, 0);
+    /* Gradiente dos botões */
+    --gradient-btn-antigos:#1c92d2;
+    --gradient-btn-chrome-safari: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe);
+    --gradient-btn-novo: linear-gradient(to right, #1c92d2, #f2fcfe);
 
     --font-primary: 'Baloo 2', cursive;
     --font-secondary: 'Josefin Slab', sans-serif;

@@ -93,7 +93,13 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2.5vh;
     color: #434343;
+    display: flex;
 
+
+}
+
+.titulo-slide-main h1 {
+    /* padding: 2rem; */
 }
 
 
@@ -180,7 +186,8 @@ input {
 
 /* Sessao Cards bloco de Cards */
 .sessao-cardsPai {
-   padding: 80px;
+    padding: 80px;
+    padding-bottom: 0;
 }
 
 .bloco-card {
@@ -189,7 +196,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     gap: 10px;
 }
 
@@ -206,6 +212,78 @@ input {
     border-radius: 20px;
 }
 
-.titulo-cards-principal {
+.card-sessao h2 {
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
 
+.card-sessao p {
+    text-align: center;
+}
+
+.titulo-cards-principal h1 {
+    text-align: center;
+    font-size: 5vh;
+    color: #434343;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Cards com texto de lado (Nossa equipe) */
+.sessao-cards-nossaEquipe {
+    padding: 20px;
+}
+
+
+.containerGeral-cards-nossaEquipe {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo-equipe-cards {
+    text-align: center;
+}
+
+.container-card-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.img-nossaEquipe-card img {
+    width: 17vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.texto-nossaEquipe-card {
+    width: 17vw;
+    object-fit: cover;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-equipe-cards {
+    text-align: center;
+    margin: 4rem;
+    font-size: 2rem;
+    color: #434343;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+/* Conjunto de imagens em sessao estrutura wellcamp */
+#titulo-pricipal-estruturaWellCamp {
+    font-size: 6vh;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
 }

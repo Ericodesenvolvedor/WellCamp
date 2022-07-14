@@ -1,52 +1,130 @@
-body{
-    background: #eee;
+body {
+    background: var(--primary-color);
     padding-top: 2rem;
-    font-family: 'Mulish';
-  }
-  .header{
+    font-family: var(--font-action);
+}
+header{
+  background-image: 10;
+}
+.header {
     border-radius: 2rem 2rem 0 0;
     padding: 1rem 0;
     background: rgb(0, 128, 0);
-    color: #fff;
+    color: var(--primary-color);
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
-  }
-  .faq-item{
+}
+.faq-item {
     margin-bottom: 4rem;
     margin-top: 4rem;
     padding: 1rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.877);
-    border-radius: 1rem
-  }
-  .faq-body{
+    box-shadow: 0 0 1rem;
+    border-radius: 1rem;
+}
+.faq-body {
     display: none;
     margin-top: 3rem;
-  }
+}
 
-  .faq-body.active-response {
+.faq-body.active-response {
     display: block;
-  }
+}
 
-  .faq-wrapper{
+.faq-wrapper {
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 0 1rem rgb(19, 151, 74);
-    border-radius: 2rem
-  }
-  .faq-inner{
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+.faq-inner {
     padding: 3rem;
     background: aliceblue;
-  }
-  .faq-plus{
+    border-radius: 2rem;
+}
+.faq-plus {
     float: right;
     font-size: 1.4em;
     line-height: 1em;
     cursor: pointer;
-    
-  }
-
-  hr{
+}
+hr {
     background-color: #9b9b9b;
+}
+form {
+    margin: 4rem 16rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: white;
+    border: solid rgb(139, 233, 135);
+    padding-bottom: 2rem;
+}
+
+h1 {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+input,
+textarea {
+    width: 20rem;
+    padding: 1rem;
+    color: black;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border: 1rem solid;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    height: 4rem;
+    width: 10rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border: 1rem solid;
+    color: black;
+}
+
+textarea {
+    width: 40rem;
+    height: 7.5rem;
+    line-height: 2rem;
+    max-width: 40rem;
+}
+
+form label {
+    margin-left: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+figure.banner{
+  width: 100%;
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  
+}
+figure.banner img{
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: top center; */
 }

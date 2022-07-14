@@ -93,23 +93,25 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2.5vh;
     color: #434343;
+
 }
 
 
-.main-principal {
+.main-slide {
     margin: 0;
     padding: 0;
-    height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .slide-show-main {
     width: 800px;
     height: 500px;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     border-radius: 10px;
 
 }
@@ -146,6 +148,8 @@ input {
     display: flex;
     width: 400%;
     height: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .slide {
@@ -175,18 +179,33 @@ input {
 }
 
 /* Sessao Cards bloco de Cards */
-
 .sessao-cardsPai {
+   padding: 80px;
+}
+
+.bloco-card {
+    height: 80vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100vw;
-    max-height: 100vh;
+    display: flex;
+    gap: 10px;
 }
 
-.titulo-blocoCards-main {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5vh;
-    color: #434343;
+
+.card-sessao {
+    width: 20vmax;
+
+}
+
+.card-sessao img {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.titulo-cards-principal {
+
 }

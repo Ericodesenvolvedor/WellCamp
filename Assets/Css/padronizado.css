@@ -115,3 +115,8 @@ body {
 .menu-link:hover {
     background-color: rgb(85, 134, 85);
 }
+
+.wrapper-content {
+    width: 80%;
+    margin-inline: auto;
+}

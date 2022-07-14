@@ -132,11 +132,6 @@ main {
     margin-block: 4rem;
 }
 
-#sobre-home .wrapper-content {
-    width: 80%;
-    margin-inline: auto;
-}
-
 .wrapper-content header {
     width: 100%;
     text-align: center;

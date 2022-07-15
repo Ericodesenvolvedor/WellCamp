@@ -20,7 +20,7 @@ header{
     margin-bottom: 4rem;
     margin-top: 4rem;
     padding: 1rem;
-    box-shadow: 0 0 1rem;
+    box-shadow: 0 0 1rem rgb(0, 128, 0) ;
     border-radius: 1rem;
 }
 .faq-body {
@@ -61,7 +61,8 @@ form {
     align-items: center;
     border-radius: 2rem;
     background-color: white;
-    border: solid rgb(139, 233, 135);
+    border: 0.2rem solid rgba(56, 165, 56, 0.795);
+    box-shadow: 0 0 1rem rgb(56, 155, 56);
     padding-bottom: 2rem;
 }
 
@@ -80,7 +81,7 @@ textarea {
     margin-top: 1rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
-    border: 1rem solid;
+    border: 0.2rem solid rgb(0, 128, 0);
 }
 
 input:hover,
@@ -98,8 +99,8 @@ textarea:focus {
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
-    border: 1rem solid;
-    color: black;
+    border: 0.2rem solid rgb(0, 128, 0);
+    color: rgb(2, 90, 2);
 }
 
 textarea {

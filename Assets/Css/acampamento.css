@@ -233,12 +233,12 @@ input {
 
 /* Cards com texto de lado (Nossa equipe) */
 .sessao-cards-nossaEquipe {
-    padding: 20px;
+    padding: 5rem;
 }
 
 
 .containerGeral-cards-nossaEquipe {
-    height: 50vh;
+    height: 35vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -254,7 +254,7 @@ input {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 0 20px;
+    padding: 0 2px;
 }
 
 .img-nossaEquipe-card img {
@@ -282,8 +282,21 @@ input {
 }
 
 /* Conjunto de imagens em sessao estrutura wellcamp */
+
+.sessao-estrutura-cards {
+    margin: 5rem;
+}
+
+
 #titulo-pricipal-estruturaWellCamp {
     font-size: 6vh;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container-estrutura-card {
+    display: flex;
+    justify-content: center;
+
 }

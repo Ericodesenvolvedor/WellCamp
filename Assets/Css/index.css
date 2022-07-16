@@ -132,6 +132,11 @@ main {
     margin-block: 4rem;
 }
 
+section {
+    position: relative;
+    z-index: -1;
+}
+
 .wrapper-content header {
     width: 100%;
     text-align: center;
@@ -162,8 +167,6 @@ main {
     /* background-color: rgb(197, 182, 159); */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.336);
     padding: 1rem;
-    position: relative;
-    z-index: -1;
 }
 
 #sobre-home .flex-content:nth-child(odd) {
@@ -199,4 +202,56 @@ main {
     text-align: center;
     font-size: 3rem;
     padding: .5rem;
+}
+
+/* INICIO DA SESSÃO PONTOS-FORTES */
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.grid-content .ponto {
+    padding: 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.158);
+    background-color: #37a357;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+}
+
+/* .grid-content .ponto:nth-child(3), 
+.grid-content .ponto:nth-child(4) {
+    background-color: rgb(103, 137, 160);
+} */
+
+.ponto header {
+    max-width: 100%;
+    max-height: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ponto header figure {
+    width: 10%;
+    height: 70%;
+}
+
+.ponto header figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.ponto header h3 {
+    font-size: 2.8rem;
+}
+
+.ponto p {
+    text-align: center;
+    line-height: 2.5rem;
 }

@@ -129,7 +129,11 @@ body {
 /* ============= SOBRE =========== */
 
 main {
-    margin-block: 4rem;
+    margin-bottom: 4rem;
+}
+
+section {
+    margin-block: 2rem;
 }
 
 .wrapper-content header {
@@ -137,15 +141,16 @@ main {
     text-align: center;
     padding: 1rem;
     font-size: 3rem;
+    color: var(--secondary-color);
     font-family: var(--font-primary);
-    margin-bottom: 4rem;
+    margin-block: 2rem;
 }
 
 .wrapper-content header h2::before {
     content: "";
     width: 4px;
     height: 4rem;
-    background-color: #8f7d64;
+    background-color: var(--secondary-color);
     position: relative;
     top: .5rem;
     margin-right: 2rem;
@@ -154,16 +159,12 @@ main {
 
 #sobre-home .flex-content {
     width: 100%;
-    height: 50vh;
     margin-block: 3rem;
     display: flex;
     align-items: center;
     gap: 3rem;
-    /* background-color: rgb(197, 182, 159); */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.336);
     padding: 1rem;
-    position: relative;
-    z-index: -1;
 }
 
 #sobre-home .flex-content:nth-child(odd) {
@@ -199,4 +200,115 @@ main {
     text-align: center;
     font-size: 3rem;
     padding: .5rem;
+}
+
+/* INICIO DA SESSÃO PONTOS-FORTES */
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.grid-content .ponto {
+    padding: 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.158);
+    background-color: #37a357;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+}
+
+.ponto header {
+    max-width: 100%;
+    max-height: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ponto header figure {
+    width: 10%;
+    height: 70%;
+}
+
+.ponto header figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.ponto header h3 {
+    font-size: 2.8rem;
+}
+
+.ponto p {
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+/* INICIO SESSÃO RELATOS */
+
+#relatos-acampamento {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#relatos-acampamento .relatos-clientes {
+    display: flex;
+    gap: 3rem;
+}
+
+.relatos-clientes .relatos {
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.158);
+    position: relative;
+}
+
+.relatos::before {
+    content: '"';
+    position: absolute;
+    left: 1rem;
+    top: .5rem;
+    font-size: 3rem;
+}
+
+.relatos::after {
+    content: '"';
+    position: absolute;
+    right: 1rem;
+    bottom: .2rem;
+    font-size: 3rem;
+}
+
+.relatos-clientes .relatos header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relatos header figure {
+    width: 100%;
+    height: 100%;
+}
+
+.relatos header img {
+    max-height: 100px;
+    min-height: 70px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:  center;
+    clip-path: circle();
+}
+
+.relatos .citacao {
+    display: flex;
 }

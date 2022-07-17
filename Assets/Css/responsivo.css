@@ -207,4 +207,16 @@
     #modal {
         width: 90%;
     }
+
+    [data-wellcamp="right"] {
+        transform: translate3d(50px, 0, 0);
+    }
+    
+    [data-wellcamp="left"] {
+        transform: translate3d(-50px, 0, 0);
+    }
+    
+    [data-wellcamp="top"] {
+        transform: translate3d(0, 50px, 0);
+    }
 }

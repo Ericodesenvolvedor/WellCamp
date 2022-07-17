@@ -243,3 +243,27 @@
 .relatos p {
     margin-bottom: 2rem;
 }
+
+/* SCROLL ANIMÇÃO */
+
+[data-wellcamp] {
+    opacity: 0;
+    transition: ease 1s;
+}
+
+[data-wellcamp="right"] {
+    transform: translate3d(70px, 0, 0);
+}
+
+[data-wellcamp="left"] {
+    transform: translate3d(-70px, 0, 0);
+}
+
+[data-wellcamp="top"] {
+    transform: translate3d(0, 70px, 0);
+}
+
+[data-wellcamp].fadeOn {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}

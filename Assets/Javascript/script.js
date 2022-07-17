@@ -42,3 +42,25 @@ function fecharModal() {
         inputEmail.value = '';
     }
 }
+
+// SCROLL ANIMAÇÃO
+const target = document.querySelectorAll('[data-wellcamp]');
+const animationFade = 'fadeOn';
+
+function wellcampScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+
+    target.forEach(function(item) {
+        if(windowTop > item.offsetTop) {
+            item.classList.add(animationFade);
+        } else {
+            item.classList.remove(animationFade);
+        }
+    })
+}
+
+if(target.length) {
+    window.addEventListener('scroll', function() {
+        wellcampScroll();
+    });
+}

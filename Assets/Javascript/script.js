@@ -6,9 +6,7 @@ let inputEmail = document.getElementById('email');
 
 hamburguer.addEventListener('click', () => {
     document.querySelector('.container').classList.toggle('show-menu');
-})
-
-
+});
 
 abrirModal.addEventListener('click', (e) => {
     e.preventDefault();

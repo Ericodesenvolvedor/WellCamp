@@ -1,1 +1,152 @@
-/* TODAS CONFIGURAÇÕES DE RESPONSIVIDADE FICARÃO AQUI */
+@media screen and (max-width: 1024px) {
+    .show-menu .sidebar {
+        width: 100%;
+        right: 0;
+    }
+
+    .wrapper-content {
+        width: 70%;
+     
+    }
+    
+    #sobre-home .flex-content,
+    #sobre-home .flex-content:nth-child(odd) {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .grid-content{
+        grid-template-columns: 70%;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+    }
+
+    .relatos-clientes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .relatos-clientes .relatos {
+        width: 70%;
+    }
+
+    .relatos header img {
+        max-height: 100px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .banner h1 {
+        font-size: 4rem;
+    }   
+    
+    .banner .ancoras-header {
+        gap: 2rem;
+    }
+
+    .banner .ancoras-header a{
+        padding: 1rem 4rem;
+        font-size: 1.5rem;
+    }
+
+    .email-capturar-card figure {
+        display: none;
+    }
+
+    #modal {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .banner {
+        width: 90%;
+        top: 30%;
+        left: 5%;
+    }
+    
+    .banner p {
+        font-size: 2.5rem;
+    }
+    
+    header.header-padrao {
+        font-size: 2.5rem;
+    }
+
+    .wrapper-content {
+        width: 90%;
+    }
+
+    #sobre-home .flex-content,
+    #sobre-home .flex-content:nth-child(odd), 
+    .relatos-clientes .relatos {
+        width: 80%;
+    }
+
+    .ponto header h3 {
+        font-size: 2.2rem;
+    }
+
+    .ponto p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .banner {
+        top: 30%;
+        left: 10%;
+        width: 90%;
+    }
+
+    .ponto header {
+        flex-direction: column;
+    }
+
+    .banner .ancoras-header {
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+    }
+
+    .banner .ancoras-header a{
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+    }
+
+    .flex-content div p {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    header.header-padrao {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .banner {
+        width: 90%;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .ponto header {
+        flex-direction: column;
+    }
+
+    .banner .ancoras-header a{
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+    }
+
+    .grid-content{
+        grid-template-columns: 80%;
+    }
+}

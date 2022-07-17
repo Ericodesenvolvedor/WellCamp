@@ -3,6 +3,12 @@ const abrirModal = document.querySelector('#abrir-modal');
 const mostrarModal = document.querySelector('#receber-noticias');
 let inputNome = document.getElementById('nome');
 let inputEmail = document.getElementById('email');
+const flexContent = document.querySelectorAll('.flex-content');
+console.log(flexContent)
+
+// for(let count = 0; count < flexContent.length; count++) {
+//     // flexContent[count].removeAttribute('data-aos')
+// }
 
 hamburguer.addEventListener('click', () => {
     document.querySelector('.container').classList.toggle('show-menu');

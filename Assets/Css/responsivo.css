@@ -1,54 +1,203 @@
-@media screen and (max-width: 1024px) {
-    .show-menu .sidebar {
-        width: 100%;
-        right: 0;
+@media screen and (max-width: 375px){    
+    .banner h1 {
+        font-size: 3.1rem;
+        line-height: 3.9rem;
+    }
+
+    .banner p {
+        font-size: 2.5rem;
+    }
+
+    .banner .ancoras-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .banner .ancoras-header a {
+        width: 70%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .banner h1 {
+        font-size: 3.1rem;
+    }
+
+    .banner p {
+        font-size: 2.5rem;
+    }
+
+    .banner .ancoras-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .banner .ancoras-header a {
+        width: 70%;
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+    }
+
+    .grid-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .banner .ancoras-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .banner .ancoras-header a {
+        width: 70%;
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
     }
 
     .wrapper-content {
         width: 70%;
-     
+    }
+
+    header.header-padrao {
+        font-size: 2rem;
     }
     
-    #sobre-home .flex-content,
+    .ponto header h3 {
+        font-size: 2.8rem;
+    }
+    
+    .ponto p {
+        text-align: justify;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .banner {
+        top: 15%;
+        left: 20%;
+    }
+    
+    .banner h1 {
+        font-size: 4rem;
+        line-height: 3.9rem;
+    }
+
+    .banner p {
+        font-size: 2.8rem;
+    }
+
+    .banner .ancoras-header a {
+        font-size: 1.3rem;
+        padding: 1.5rem 4rem;
+    }
+
+    .sidebar {
+        display: none;
+        width: 100%;
+        transition: all 1s;
+    }
+    
+    .show-menu .sidebar {
+        display: block;
+    }
+
+    .wrapper-content {
+        width: 70%;
+    }
+
+    header.header-padrao {
+        font-size: 2rem;
+    }
+
+    #sobre-home .flex-content, 
     #sobre-home .flex-content:nth-child(odd) {
         flex-direction: column;
-        width: 70%;
-        margin: auto;
-        margin-bottom: 2rem;
+    }
+
+    .flex-content figure {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-content div {
+        margin: 4rem 1rem;
     }
 
     .grid-content{
-        grid-template-columns: 70%;
-        grid-template-rows: auto auto auto auto;
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+    }
+    
+    .grid-content .ponto {
+        background-color: var(--details-blue-1);
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px var(--black-varient-3);
+    }
+    
+    .ponto header {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .ponto header img {
+        max-width: 60px;
+        max-height: 60px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .ponto header h3 {
+        font-size: 2.8rem;
+    }
+    
+    .ponto p {
+        text-align: justify;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
     }
 
-    .relatos-clientes {
+    .grid-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .grid-content .ponto header {
         flex-direction: column;
         align-items: center;
     }
 
+    .grid-content .ponto header h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .grid-content .ponto header img {
+        width: 100%;
+        max-height: 70px;
+    }
+
+    .grid-content .ponto p {
+        text-align: center;
+    }
+
+    .relatos-clientes {
+        flex-direction: column;
+    }
+
     .relatos-clientes .relatos {
-        width: 70%;
-    }
-
-    .relatos header img {
-        max-height: 100px;
-    }
-}
-
-@media screen and (max-width: 720px){
-    .banner h1 {
-        font-size: 4rem;
-    }   
-    
-    .banner .ancoras-header {
-        gap: 2rem;
-    }
-
-    .banner .ancoras-header a{
-        padding: 1rem 4rem;
-        font-size: 1.5rem;
+        width: 100%;
     }
 
     .email-capturar-card figure {
@@ -56,97 +205,6 @@
     }
 
     #modal {
-        width: 100%;
-        height: 50vh;
-    }
-}
-
-@media screen and (max-width: 620px){
-    .banner {
         width: 90%;
-        top: 30%;
-        left: 5%;
-    }
-    
-    .banner p {
-        font-size: 2.5rem;
-    }
-    
-    header.header-padrao {
-        font-size: 2.5rem;
-    }
-
-    .wrapper-content {
-        width: 90%;
-    }
-
-    #sobre-home .flex-content,
-    #sobre-home .flex-content:nth-child(odd), 
-    .relatos-clientes .relatos {
-        width: 80%;
-    }
-
-    .ponto header h3 {
-        font-size: 2.2rem;
-    }
-
-    .ponto p {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .banner {
-        top: 30%;
-        left: 10%;
-        width: 90%;
-    }
-
-    .ponto header {
-        flex-direction: column;
-    }
-
-    .banner .ancoras-header {
-        flex-direction: column;
-        width: 70%;
-        text-align: center;
-    }
-
-    .banner .ancoras-header a{
-        padding: 1rem 3rem;
-        font-size: 1.3rem;
-    }
-
-    .flex-content div p {
-        font-size: 1.6rem;
-        text-align: left;
-    }
-
-    header.header-padrao {
-        font-size: 2.2rem;
-    }
-}
-
-@media screen and (max-width: 420px){
-    .banner {
-        width: 90%;
-    }
-
-    .banner h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-
-    .ponto header {
-        flex-direction: column;
-    }
-
-    .banner .ancoras-header a{
-        padding: 1rem 3rem;
-        font-size: 1.3rem;
-    }
-
-    .grid-content{
-        grid-template-columns: 80%;
     }
 }

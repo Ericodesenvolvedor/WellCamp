@@ -26,12 +26,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vh;
-    color: antiquewhite;
+    color: #fff;
     font-weight: bolder;
     font-family: 'Poppins', sans-serif;
 }
 
-/*=============================================== Seta para baixo ============================================== */
+/*=============================================== Seta para baixo */
 #seta-acampamento-baner figure {
     width: 100%;
     text-align: center;
@@ -64,7 +64,7 @@
 
 }
 
-/*================================================== LogoMarca da empresa titulo=================================== */
+/*================================================== LogoMarca da empresa titulo*/
 .logoMarca-main-titulo {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -197,22 +197,35 @@ input {
 
 .card-sessao {
     width: 20vmax;
+    hyphens: inherit;
 }
 
 .card-sessao img {
     width: 20vw;
     height: 40vh;
     object-fit: cover;
+    border: 3pt solid #000;
     border-radius: 20px;
+    box-shadow: -7pt 7pt 7pt #000;
 }
 
 .card-sessao h2 {
+    color: #fff;
     text-align: center;
     font-weight: 900;
+    background-color: #475d3b;
+    margin: 1rem;
+    border-radius: 10pt;
+    text-shadow: -5pt 5pt 5pt #000;
 }
 
-.card-sessao p {
-    text-align: center;
+.text-blocoCards {
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.text-blocoCards p {
+    padding: 0 2rem;
 }
 
 .titulo-cards-principal h2 {
@@ -237,6 +250,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: .9rem;
 }
 
 .titulo-equipe-cards {
@@ -255,13 +269,22 @@ input {
 .img-nossaEquipe-card img {
     width: 17vw;
     object-fit: cover;
+    border: 3pt solid #000;
     border-radius: 20px;
+    box-shadow: -5pt 5pt 5pt #000;
 }
 
 .texto-nossaEquipe-card {
     width: 17vw;
     object-fit: cover;
     text-align: start;
+}
+
+.texto-nossaEquipe-card h2 {
+    background-color: #475d3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10pt;
 }
 
 .titulo-equipe-cards {
@@ -277,7 +300,6 @@ input {
 /* sessao de cards part estrutura  */
 .sessao-estrutura-cards {
     margin: 0 19rem;
-
 }
 
 
@@ -286,20 +308,32 @@ input {
     font-weight: 900;
     text-align: center;
     margin-bottom: 7vh;
-    color: #242323de; 
+    color: #242323de;
 }
 
 .container-estrutura-card {
     display: flex;
     justify-content: center;
-    gap: 3vw;
+    gap: 1vw;
 
 }
 
 .img-estrutura img {
     width: 37vw;
     object-fit: cover;
-    border-radius: 2rem;
+    border-radius: 10pt;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.text-estrutura h2 {
+
+    background-color: #475d3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10pt;
+
 }
 
 /* container da parte de quartos Grid  */
@@ -310,10 +344,9 @@ input {
 .titulo-quartos-grid {
     font-size: 2rem;
     font-weight: 900;
-    text-align: center;
+    text-align: start;
     margin: 2.5rem;
     color: #242323de;
-    /* padding: 2rem; */
 }
 
 .container-quartos-grid {
@@ -327,6 +360,8 @@ input {
     object-fit: cover;
     height: 70vh;
     border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
 
 }
 
@@ -334,7 +369,9 @@ input {
     width: 30vw;
     height: 34vh;
     object-fit: cover;
-    border-radius: 20px ;
+    border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
 }
 
 #img-1-grid {
@@ -358,18 +395,19 @@ input {
     object-fit: cover;
     height: 50vh;
     border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
 
 }
 
 .texto-memorial-wellcamp {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:baseline;
+    align-items:flex-start;
+
 }
 
 .texto-memorial-wellcamp h2 {
-
     font-size: 3rem;
     color: #242323de;
 }
@@ -390,10 +428,56 @@ input {
     object-fit: cover;
     height: 50vh;
     border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
 
 }
 
 .texto-setorEsporte h2 {
-    color: #242323de;
     font-size: 3rem;
+    background-color: #475d3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10pt;
+
+}
+
+/* Sessão Responsividade */
+
+@media (max-width: 1253px) {
+    .bloco-card {
+        display: table-cell;
+    }
+}
+
+/* Ajustando o tamanho do Memorial */
+@media (max-width: 1342px) {
+    /* #well-style {
+        font-size: 3rem;
+    }
+
+    #camp-style {
+        font-size: 3rem;
+    } */
+    .texto-memorial-wellcamp h2 {
+      
+    }
+    .container-memorial-wellcamp-card {
+        width: 100%;
+        gap: 10pt;
+        
+    }
+}
+
+
+/* Ajustando a Fonte do H1 */
+@media (max-width: 1296px) {
+
+    .titulo-banner-acampamento {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        object-fit: cover;
+
+    }
 }

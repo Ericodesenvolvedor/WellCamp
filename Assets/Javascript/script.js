@@ -4,15 +4,23 @@ const mostrarModal = document.querySelector('#receber-noticias');
 let inputNome = document.getElementById('nome');
 let inputEmail = document.getElementById('email');
 const flexContent = document.querySelectorAll('.flex-content');
-console.log(flexContent)
 
-// for(let count = 0; count < flexContent.length; count++) {
-//     // flexContent[count].removeAttribute('data-aos')
-// }
+hamburguer.addEventListener('click', menuOn);
 
-hamburguer.addEventListener('click', () => {
-    document.querySelector('.container').classList.toggle('show-menu');
-});
+function menuOn() {
+    const container = document.querySelector('.container')
+    container.classList.toggle('show-menu');
+    const hasShowMenu = container.classList.contains('show-menu');
+    hamburguer.setAttribute('aria-expanded', hasShowMenu);
+
+    if(hasShowMenu) {
+        hamburguer.setAttribute('aria-label', 'Fechar menu');
+    } 
+    
+    else {
+        hamburguer.setAttribute('aria-label', 'Abrir menu');
+    }
+}
 
 abrirModal.addEventListener('click', (e) => {
     e.preventDefault();

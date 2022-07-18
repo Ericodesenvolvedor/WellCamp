@@ -25,11 +25,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="hamburguer">
+        <button class="hamburguer" tabindex="1" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebarControl" aria-haspopup="true">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
-        </div>
+        </button>
 
         <header class="banner-container">
             <figure class="banner-medium">
@@ -42,7 +42,7 @@
             </div>
         </header>
 
-        <div class="sidebar">
+        <aside class="sidebar" id="sidebarControl">
             <nav>
                 <ul class="menu">
                     <li class="menu-item">
@@ -62,7 +62,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </aside>
 
         <main>
             <section id="contagem-regressiva">

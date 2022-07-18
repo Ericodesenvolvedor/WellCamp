@@ -19,7 +19,7 @@
     content="Wellcamp"
     >
     <title>Wellcamp - Temporadas</title>
-    <link rel="stylesheet" href="../Assets/Css/acampamento.css">
+    <link rel="stylesheet" href="../Assets/Css/temporadas.css">
     <link rel="stylesheet" href="../Assets/Css/padronizado.css">
     <link rel="stylesheet" href="../Assets/Css/responsivo.css">
 </head>
@@ -31,16 +31,14 @@
             <div class="line" id="line3"></div>
         </div>
 
-        <header>
-            <figure class="img-wrapper">
-                <img src="" alt="">
+        <header class="banner-container">
+            <figure class="banner-medium">
+                <img src="https://images.unsplash.com/photo-1615801627253-eae9c5be334e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" >
             </figure>
             
-            <div class="banner">
-                <h1>
-                    Temporadas
-                </h1>
-                <p>Wellcamp</p>
+            <div class="banner-text">
+                <h1>Fazer parte do melhor acampamento</h1>
+                <p>Aqui você poderá garantir a sua inscrição para uma temporada conosco</p>
             </div>
         </header>
 
@@ -65,7 +63,176 @@
                 </ul>
             </nav>
         </div>
+
+        <main>
+            <section id="contagem-regressiva">
+                <div class="wrapper-content">
+                    <header class="header-padrao">
+                        <h2>Próxima temporada</h2>
+                    </header>
+
+                    <ul>
+                        <li>
+                            <span data-time>00</span>
+                            <div>Dias(s)</div>
+                        </li>
+
+                        <li>
+                            <span data-time>00</span>
+                            <div>Horas(s)</div>
+                        </li>
+
+                        <li>
+                            <span data-time>00</span>
+                            <div>Min(s)</div>
+                        </li>
+                        <li>
+                            <span data-time>00</span>
+                            <div>Seg(s)</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="servicos">
+                <div class="wrapper-content">
+                    <header class="header-padrao">
+                        <h2>Serviços</h2>
+                    </header>
+
+                    <div class="servicos-pessoas flex-card">
+                        <div class="servicos-item-pessoas flex-card-item">
+                            <header>Básico</header>
+                            <div class="space">
+                                <ul>
+                                    <li>7 dias no acampamento</li>
+                                    <li>Atividades</li>
+                                    <li>Acesso a 1 palestra</li>
+                                    <li>Certificação</li>
+                                </ul>
+                                <button class="btn-padrao">Reservar</button>
+                            </div>
+                        </div>
+
+                        <div class="servicos-item-pessoas flex-card-item">
+                            <header>Médio</header>
+                            <div class="space">
+                                <ul>
+                                    <li>14 dias no acampamento</li>
+                                    <li>Atividades</li>
+                                    <li>Acesso a 3 palestra</li>
+                                    <li>Certificação</li>
+                                </ul>
+                                <button class="btn-padrao">Reservar</button>
+                            </div>
+                        </div>
+
+                        <div class="servicos-item-pessoas flex-card-item">
+                            <header>Avançado</header>
+                            <div class="space">
+                                <ul>
+                                    <li>20 dias no acampamento</li>
+                                    <li>Atividades</li>
+                                    <li>Acesso a 8 palestra</li>
+                                    <li>Certificação</li>
+                                    <li>Acesso a eventos exclusivos</li>
+                                </ul>
+                                <button class="btn-padrao">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="servicos-empresas flex-card">
+                        <div class="servicos-item-empresas flex-card-item">
+                            <header>Reunião</header>
+                            <div class="space">
+                                <ul>
+                                    <li>Salas adaptadas para reuniões</li>
+                                    <li>Serviços de self-service</li>
+                                    <li>Recepção para convidados</li>
+                                    <li>Wi-fi</li>
+                                    <li>Projetores para apresentação</li>
+                                </ul>
+                                <button class="btn-padrao">Reservar</button>
+                            </div>
+                        </div>
+
+                        <div class="servicos-item-empresas flex-card-item">
+                            <header>Férias</header>
+                            <div class="space">
+                                <ul>
+                                    <li>25 dias de acampamento para você</li>
+                                    <li>Trilha com profissionais</li>
+                                    <li>Natação</li>
+                                    <li>Cinema ao ar livre</li>
+                                    <li>Historias em volta da fogueira</li>
+                                </ul>
+                                <button class="btn-padrao">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="receber-noticias">
+                <div class="wrapper-content">
+                    <header class="header-padrao">
+                        <h2>Receba notícias sobre nosso acampamento</h2>
+                    </header>
+
+                    <div class="email-capturar-card">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+                        </figure>
+                        <div>
+                            <form action="#">
+                                <div id="div-nome">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" name="nome">
+                                </div>
+                                
+                                <div id="div-email">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                                
+                                <button type="submit" id="abrir-modal">Enviar</button>
+                            </form>
+                            <p>
+                                Ao preencher as informações você estará por dentro de todas as novidades do nosso acampamento.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="modal">
+                        <header id="modal-header">
+                            <div>
+                                <figure>
+                                    <img src="../Assets/Imagens/check-circle-fill.svg" alt="">
+                                </figure>
+                                <span>Email cadastrado</span>
+                            </div>
+
+                            <button id="fechar-modal">
+                                <figure>
+                                    <img src="../Assets/Imagens/x-circle-fill.svg" alt="#">
+                                </figure>
+                            </button>
+                        </header>
+
+                        <div id="msg-agradecimento">
+                            <h3>Obrigado</h3>
+                            <p>agora você receberá todas as nossas notícias de primeira mão.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Todos os direitos reservados - Wellcamp 2022</p>
+        </footer>
     </div>
     <script src="../Assets/Javascript/script.js"></script>
+    <script src="../Assets/Javascript/Countdown.js"></script>
 </body>
 </html>

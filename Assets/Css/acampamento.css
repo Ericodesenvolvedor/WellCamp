@@ -442,6 +442,13 @@ input {
 
 }
 
+footer {
+    background-color: #1c92d2;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Sessão Responsividade */
 @media (max-width: 1120px) {
     .containerGeral-cards-nossaEquipe {
@@ -593,6 +600,22 @@ input {
 }
 
 @media (max-width: 425px) {
+    
+    .titulo-banner-acampamento h1 {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    .titulo-banner-acampamento {
+        width: 100%;
+    }
+    
+
+    .slide-show-main {
+        width: 100%;
+    }
+    
     .bloco-card {
         flex-direction: column;
         height: 100%;
@@ -600,7 +623,7 @@ input {
     }
 
     .card-sessao {
-        width: 50%;
+        width: 90%;
     }
 
     .containerGeral-cards-nossaEquipe {
@@ -659,6 +682,15 @@ input {
 
     .sessao-setorEsporte-card {
         margin: 2rem 2rem;
+    }
+
+    .sessao-cardsPai {
+        margin: 0;
+    }
+
+    .bloco-card {
+        margin: 0;
+        margin-bottom: 2rem;
     }
 }
 

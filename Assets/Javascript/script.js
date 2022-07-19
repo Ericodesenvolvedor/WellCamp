@@ -1,9 +1,4 @@
 const hamburguer = document.querySelector('.hamburguer');
-const abrirModal = document.querySelector('#abrir-modal');
-const mostrarModal = document.querySelector('#receber-noticias');
-let inputNome = document.getElementById('nome');
-let inputEmail = document.getElementById('email');
-const flexContent = document.querySelectorAll('.flex-content');
 
 hamburguer.addEventListener('click', menuOn);
 
@@ -21,25 +16,6 @@ function menuOn() {
         hamburguer.setAttribute('aria-label', 'Abrir menu');
     }
 }
-
-abrirModal.addEventListener('click', (e) => {
-    e.preventDefault();
-    
-    if(inputNome.value == '') {
-        alert('Você precisa informar todos os campos antes de enviar!');
-    } 
-    
-    else if(inputEmail.value == '') {
-        alert('Você precisa informar todos os campos antes de enviar!');
-    } 
-    
-    else {
-        mostrarModal.classList.add('mostrar-modal');
-        const btnModalFechar = document.querySelector('#fechar-modal');
-        btnModalFechar.addEventListener('click', fecharModal);
-    }
-
-});
 
 function fecharModal() {
     const mostrarModalOn = mostrarModal.classList.contains('mostrar-modal');
@@ -71,4 +47,15 @@ if(target.length) {
     window.addEventListener('scroll', function() {
         wellcampScroll();
     });
+}
+
+let abrirResposta = document.querySelectorAll('.button-resposta');
+
+for(let count = 0; count < abrirResposta.length; count++) {
+    abrirResposta[count].addEventListener('click', () => {
+        let divRespostas = document.querySelectorAll('.box-resposta');
+        divRespostas[count].classList.toggle('active-resposta');
+    })
+
+    console.log(abrirResposta[count]);
 }

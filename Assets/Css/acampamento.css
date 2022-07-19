@@ -1,0 +1,702 @@
+/*======================== Imagem e Titulo do Inicio da pagina ===========================================*/
+.acampamento-banner {
+    width: 100%;
+    height: 68vh;
+    position: relative;
+
+}
+
+#img-incio {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#img-incio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.titulo-banner-acampamento {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vh;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*=============================================== Seta para baixo */
+#seta-acampamento-baner figure {
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    position: relative;
+    padding: 2vh;
+
+    animation-name: seta-acampamento;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#seta-img {
+    width: 15vw;
+    height: 10vh;
+    opacity: .8;
+    object-fit: contain;
+}
+
+@keyframes seta-acampamento {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 2rem;
+    }
+
+}
+
+/*================================================== LogoMarca da empresa titulo*/
+.logoMarca-main-titulo {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10vh;
+
+}
+
+#well-style {
+    color: #475d3b;
+    font-size: 7.5vh;
+    font-weight: 900;
+    object-fit: contain;
+}
+
+#camp-style {
+    color: #b4750f;
+    font-size: 7.5vh;
+    font-weight: 900;
+}
+
+
+/*======================================================== Slide/carrosel ========================================= */
+.titulo-slide-main {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #242323de;
+    display: flex;
+
+
+}
+
+.main-principal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide-show-main {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.navigation-bar-main {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.manual-btn-main-slide {
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.manual-btn-main-slide:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn-main-slide:hover {
+    background: #fff;
+    transform: 0.4s;
+}
+
+.container-slide-main {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.slide {
+    width: 25%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#img-1:checked~.first {
+    margin-left: 0;
+}
+
+#img-2:checked~.first {
+    margin-left: -25%;
+}
+
+#img-3:checked~.first {
+    margin-left: -50%;
+}
+
+#img-4:checked~.first {
+    margin-left: -75%;
+}
+
+/* Sessao Cards bloco de Cards */
+.sessao-cardsPai {
+    padding-bottom: 0;
+    margin: 2rem 19rem;
+}
+
+.bloco-card {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.card-sessao {
+    width: 20vmax;
+    hyphens: inherit;
+}
+
+.card-sessao img {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    border: 3pt solid #000;
+    border-radius: 20px;
+    box-shadow: -7pt 7pt 7pt #000;
+}
+
+.card-sessao h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    background-color: #475d3b;
+    margin: 1rem;
+    border-radius: 10pt;
+    text-shadow: -5pt 5pt 5pt #000;
+}
+
+.text-blocoCards {
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.text-blocoCards p {
+    padding: 0 2rem;
+}
+
+.titulo-cards-principal h2 {
+    text-align: center;
+    font-size: 5vh;
+    color: #242323de;
+    font-weight: 900;
+    padding-top: 3rem;
+}
+
+/* Cards com texto de lado (Nossa equipe) */
+.sessao-cards-nossaEquipe {
+    padding: 0 5rem;
+    margin: 2rem 19rem;
+
+}
+
+
+.containerGeral-cards-nossaEquipe {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .9rem;
+}
+
+.titulo-equipe-cards {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.container-card-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 2px;
+}
+
+.img-nossaEquipe-card img {
+    width: 17vw;
+    object-fit: cover;
+    border: 3pt solid #000;
+    border-radius: 20px;
+    box-shadow: -5pt 5pt 5pt #000;
+}
+
+.texto-nossaEquipe-card {
+    width: 17vw;
+    object-fit: cover;
+    text-align: start;
+}
+
+.texto-nossaEquipe-card h2 {
+    background-color: #475d3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10pt;
+}
+
+.titulo-equipe-cards {
+    text-align: center;
+    font-size: 2rem;
+    color: #242323de;
+    font-weight: 900;
+}
+
+
+/*======================== Conjunto de imagens em sessao estrutura wellcamp ==============================*/
+
+/* sessao de cards part estrutura  */
+.sessao-estrutura-cards {
+    margin: 0 19rem;
+}
+
+
+#titulo-pricipal-estruturaWellCamp {
+    font-size: 6vh;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 7vh;
+    color: #242323de;
+}
+
+.container-estrutura-card {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+
+}
+
+.img-estrutura img {
+    width: 37vw;
+    object-fit: cover;
+    border-radius: 10pt;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.text-estrutura h2 {
+
+    background-color: #475d3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10pt;
+
+}
+
+/* container da parte de quartos Grid  */
+.sessao-quartos-grid {
+    margin: 2rem 19rem;
+}
+
+.titulo-quartos-grid {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: start;
+    margin: 2.5rem;
+    color: #242323de;
+}
+
+.container-quartos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.grid-imagensGrande-quartos img {
+    width: 40vw;
+    object-fit: cover;
+    height: 70vh;
+    border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.grid-imagensPequena-quartos img {
+    width: 30vw;
+    height: 34vh;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
+}
+
+#img-1-grid {
+    margin-bottom: .60rem;
+}
+
+/* Memorial WellCamp Card  */
+.sessao-memorial {
+    margin: 2rem 19rem;
+
+}
+
+.container-memorial-wellcamp-card {
+    display: flex;
+    justify-content: center;
+    gap: 1.0vw;
+}
+
+.img-memorial-wellcamp img {
+    width: 40vw;
+    object-fit: cover;
+    height: 50vh;
+    border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.texto-memorial-wellcamp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.texto-memorial-wellcamp h2 {
+    font-size: 3rem;
+    color: #242323de;
+}
+
+/* Setor Esporte WellCamp  */
+.sessao-setorEsporte-card {
+    margin: 2rem 19rem;
+}
+
+.container-setorEsporte-card {
+    display: flex;
+    justify-content: center;
+    gap: 1.0vw;
+}
+
+.img-setorEsporte img {
+    width: 40vw;
+    object-fit: cover;
+    height: 50vh;
+    border-radius: 20px;
+    border: 3pt solid #000;
+    box-shadow: -5pt 5pt 5pt #000;
+
+}
+
+.texto-setorEsporte h2 {
+    font-size: 3rem;
+    background-color: #475d3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10pt;
+
+}
+
+footer {
+    background-color: #1c92d2;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sessão Responsividade */
+@media (max-width: 1120px) {
+    .containerGeral-cards-nossaEquipe {
+        gap: 50px;
+        margin: 2rem 0;
+    }
+}
+
+
+
+@media (max-width: 1096px) {
+    .titulo-banner-acampamento {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 1046px) {
+    .container-memorial-wellcamp-card {
+        flex-direction: column;
+    }
+
+    .texto-memorial-wellcamp h2 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .img-memorial-wellcamp img {
+        width: 100%;
+        height: 1%;
+    }
+
+    .container-setorEsporte-card {
+        flex-direction: column-reverse;
+    }
+
+    .img-setorEsporte img {
+        width: 100%;
+        height: 1%;
+    }
+}
+
+
+@media (max-width: 1022px) {
+    .bloco-card {
+        gap: 50px;
+    }
+
+    .card-sessao {
+        width: 100%;
+        font-size: smaller;
+
+    }
+
+    .card-sessao h2 {
+        font-size: initial;
+    }
+
+    .card-sessao img {
+        width: 23vw;
+
+    }
+
+    .containerGeral-cards-nossaEquipe {
+        gap: 20px;
+    }
+
+    .texto-nossaEquipe-card {
+        font-size: small;
+    }
+
+    .containerGeral-cards-nossaEquipe {
+        gap: 50px;
+        margin: .5rem 0;
+    }
+
+}
+
+@media (max-width: 994px) {
+    .container-estrutura-card {
+        flex-direction: column;
+
+    }
+
+    .img-estrutura img {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 938px) {
+    .card-sessao img {
+        width: 25vw;
+
+    }
+
+    .texto-nossaEquipe-card {
+        font-size: small;
+    }
+}
+
+@media (max-width:800px) {
+    .slide-show-main {
+        width: 69vw;
+        height: 100%;
+    }
+
+    .img-nossaEquipe-card img {
+        height: 100%;
+        width: 20vw;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 708px) {
+    .bloco-card {
+        gap: 30px;
+
+    }
+
+    .sessao-cardsPai {
+        margin: 0 2rem;
+    }
+
+    .card-sessao {
+        width: 28%;
+    }
+
+    .card-sessao img {
+        width: 100%;
+    }
+
+    .text-blocoCards h2,
+    p {
+        width: 100%;
+        margin: 0 0;
+        padding: 0;
+    }
+
+    .texto-nossaEquipe-card {
+        font-size: smaller;
+
+    }
+
+    .containerGeral-cards-nossaEquipe {
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    
+    .titulo-banner-acampamento h1 {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    .titulo-banner-acampamento {
+        width: 100%;
+    }
+    
+
+    .slide-show-main {
+        width: 100%;
+    }
+    
+    .bloco-card {
+        flex-direction: column;
+        height: 100%;
+        margin: 2rem;
+    }
+
+    .card-sessao {
+        width: 90%;
+    }
+
+    .containerGeral-cards-nossaEquipe {
+
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .container-card-equipe {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .sessao-cards-nossaEquipe {
+        margin: 2rem 2rem;
+        padding: 2rem;
+    }
+
+    .img-nossaEquipe-card img {
+        width: 100%;
+    }
+
+    .texto-nossaEquipe-card {
+        width: 100%;
+    }
+
+    .sessao-estrutura-cards {
+        margin: 2rem 2rem;
+    }
+
+    .container-quartos-grid {
+        grid-column-gap: .6rem;
+    }
+
+    .sessao-quartos-grid {
+        margin: 2rem 2rem;
+    }
+
+    .grid-imagensGrande-quartos img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .grid-imagensPequena-quartos img {
+
+        width: 100%;
+        height: 42%;
+        object-fit: cover;
+    }
+
+    .sessao-memorial {
+        margin: 2rem 2rem;
+    }
+
+    .sessao-setorEsporte-card {
+        margin: 2rem 2rem;
+    }
+
+    .sessao-cardsPai {
+        margin: 0;
+    }
+
+    .bloco-card {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .bloco-card {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
